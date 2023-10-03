@@ -20,11 +20,16 @@ export const BaseButton = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
+  transition-duration: 100ms;
 
   &:hover {
     background-color: white;
     color: black;
     border: 1px solid black;
+  }
+
+  &:active {
+    transform: scale(0.9);
   }
 `;
 
