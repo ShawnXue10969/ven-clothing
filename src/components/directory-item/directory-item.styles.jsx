@@ -15,15 +15,14 @@ export const Body = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 1px solid black;
   background-color: white;
-  opacity: 0.7;
+  opacity: 0.65;
   position: absolute;
 
   h2 {
     font-weight: bold;
-    margin: 0 6px 0;
-    font-size: 22px;
+    margin: 10px 6px 0;
+    font-size: 24px;
     color: #4a4a4a;
     text-transform: uppercase;
   }
@@ -31,18 +30,18 @@ export const Body = styled.div`
   p {
     font-weight: lighter;
     font-size: 16px;
+    margin-top: 10px;
   }
 `;
 
 export const DirectoryItemContainer = styled.div`
   min-width: 30%;
-  height: 240px;
+  min-height: 240px;
   flex: 1 1 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid black;
-  margin: 0 7.5px 15px;
+  margin: 0 10px 18px;
   overflow: hidden;
 
   &:hover {
@@ -50,11 +49,12 @@ export const DirectoryItemContainer = styled.div`
 
     & ${BackgroundImage} {
       transform: scale(1.1);
-      transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+      transition: transform 2s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+      filter: brightness(55%);
     }
 
     & ${Body} {
-      opacity: 0.9;
+      opacity: 1;
     }
   }
 
